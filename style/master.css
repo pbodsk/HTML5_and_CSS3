@@ -1,0 +1,41 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-color: #888;
+	-moz-box-pack: center;
+	-moz-box-orient: horizontal;
+	display: -moz-box;
+}
+
+#content-wrapper {
+	width: 60%;
+	max-width: 960px;
+	background-color: #eee;
+	border: 1px solid #000;
+	margin-top: 100px;
+}
+
+#form-wrapper {
+	-moz-box-flex: 6;
+}
+
+#callout {
+	-moz-box-flex: 1;
+}
+
+.rounded-corners {
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.horizontal-box {
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+	-moz-box-orient: horizontal;
+	-webkit-box-orient: horizontal;
+	-box-orient: horizontal;	
+}
