@@ -1,29 +1,74 @@
 html, body {
 	height: 100%;
 	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-	background-color: #888;
 	-moz-box-pack: center;
-	-moz-box-orient: horizontal;
-	display: -moz-box;
+	-webkit-box-pack: center;
+	box-pack: center;
+	background-color: #77a;
 }
 
-#content-wrapper {
-	width: 60%;
+#body-container {
+	height: 100%;
 	max-width: 960px;
 	background-color: #eee;
 	border: 1px solid #000;
 	margin-top: 100px;
+	padding: 10px;
 }
 
-#form-wrapper {
-	-moz-box-flex: 6;
+#content-container {
+
+}
+
+#form {
+	width: 400px;
 }
 
 #callout {
+	border: 1px solid #000;
+	background-color: #888;
+	font-style: italic;
+	padding: 20px;
+	margin-left: 30px;
+}
+
+.vertical-box {
+	-moz-box-orient: vertical;
+	display: -moz-box;		
+	
+	-webkit-box-orient: vertical;
+	display: -webkit-box;		
+
+	box-orient: vertical;
+	display: box;		
+}
+
+.horizontal-box {
+	-moz-box-orient: horizontal;
+	display: -moz-box;
+	
+	-webkit-box-orient: horizontal;
+	display: -webkit-box;
+
+	box-orient: horizontal;
+	display: box;
+}
+
+.flex-1 {
 	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	box-flex: 1;
+}
+
+.flex-3 {
+	-moz-box-flex: 3;
+	-webkit-box-flex: 1;
+	box-flex: 1;
 }
 
 .rounded-corners {
@@ -31,11 +76,13 @@ body {
 	border-radius: 10px;
 }
 
-.horizontal-box {
-	display: -moz-box;
-	display: -webkit-box;
-	display: box;
-	-moz-box-orient: horizontal;
-	-webkit-box-orient: horizontal;
-	-box-orient: horizontal;	
+label {
+	display: block;
+	width: 150px;
+	float: left;
+}
+
+fieldset>p{
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
