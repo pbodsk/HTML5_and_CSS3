@@ -1,6 +1,8 @@
 $(function(){
 	console.log('rolling!');
 	autofocus();
+	placeholder();
+	showRange();
 });
 
 autofocus = function(){
@@ -10,4 +12,22 @@ autofocus = function(){
 	} else {
 		console.log('support for autofocus...good');
 	}
+}
+
+placeholder = function(){
+	if(!Modernizr.input.placeholder){
+		console.log('no support for placeholder. Setting manually');
+		
+	} else {
+		console.log('support for placeholder...good');
+	}
+}
+
+showRange = function(){
+	$('#range-val').text($('#range').val());
+	$('#range').change(function(){
+		console.log('range changed');
+		var range = $(this);
+		$('#range-val').text(range.val());
+	});
 }
