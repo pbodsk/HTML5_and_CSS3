@@ -1,0 +1,66 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: -moz-linear-gradient(270deg, #60ce2f, #6e945d) repeat scroll 0 0 transparent;
+	background: -webkit-gradient(linear, left top, left bottom, from(#60ce2f), to(#6e945d))
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#bodycontainer {
+	width: 70%;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 20px;
+	background-color: #fff;
+}
+
+table {
+	width: 600px;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: none;
+}
+
+th {
+	background-color: #000;
+	color: #fff;
+}
+
+tr:nth-of-type(even){
+	background-color: #f3f3f3;
+}
+
+tr:nth-of-type(odd){
+	background-color: #ddd;
+}
+
+td:nth-child(n+2){
+	text-align: right;
+}
+
+tr:last-child {
+	font-weight: bolder;
+}
+
+tr:last-child td:last-child {
+	font-size: 1.4em;
+}
+
+tr:nth-last-child(2){
+	color: #60ce2f;
+}
+
+tr:nth-last-child(-n+3) td {
+	text-align: right;
+}
