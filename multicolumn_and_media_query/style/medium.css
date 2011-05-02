@@ -1,0 +1,21 @@
+#content {
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+}
+
+#three-column {
+	display: none;
+}
+
+#two-column {
+	display: block;
+}
+
+.lots-of-room {
+	display: none;
+}
+
+.uh-crowded {
+	display: block;
+}
+

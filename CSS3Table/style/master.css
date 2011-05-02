@@ -14,11 +14,13 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 }
 
+#wrapper {
+	padding-top: 50px;
+}
+
 #bodycontainer {
 	width: 70%;
 	margin: auto;
-	margin-top: 50px;
-	margin-bottom: 50px;
 	padding: 20px;
 	background-color: #fff;
 }

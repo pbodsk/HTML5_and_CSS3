@@ -1,0 +1,61 @@
+html, body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: -moz-linear-gradient(270deg, #60ce2f, #6e945d) repeat scroll 0 0 transparent;
+	background: -webkit-gradient(linear, left top, left bottom, from(#60ce2f), to(#6e945d))
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
+}
+
+#wrapper {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#bodycontainer {
+	width: 80%;
+	margin: auto;
+	padding: 20px;
+	background-color: #fff;
+}
+
+h1 {
+	font-size: 1.8em;
+}
+
+p {
+	padding-bottom: 20px;
+}
+
+#two-column {
+	display: none;
+}
+
+#one-column {
+	display: none;
+}
+
+#content {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	-moz-column-gap: 20px;
+	-webkit-column-gap: 20px;
+	-moz-column-rule: 1px solid #000;
+	-webkit-column-rule: 1px solid #000;
+}
+
+.lots-of-room {
+	display: block;
+}
+
+.uh-crowded {
+	display: none;
+}
+
